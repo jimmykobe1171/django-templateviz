@@ -34,7 +34,8 @@ class TemplateGraph(object):
 		else:
 			return {node: [self.get_children_rec(n) for n, _ in self._node_list[node]]}
 	
-	def get_duplicates(self, template):		
+	def get_duplicates(self, template):	
+		pass	
 
 
 class GraphNode(object):
@@ -77,7 +78,8 @@ class GraphNode(object):
 	
 	def _print_duplicates_rec(self, parent, js):
 		intersection = self._js.intersect(js)
-		for js in self.
+		for js in self:
+			pass
 
 	def print_duplicates(self):
 		for node in self._children:
